@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL3uRODl8Kz"
+#define BLYNK_TEMPLATE_ID "xxxxxxxxxxxxxxxxx"
 #define BLYNK_TEMPLATE_NAME "SwitchONOFF"
-#define BLYNK_AUTH_TOKEN "4aj77kLVaBsc-eZHvsM5ksk96JfvgOmT"
+#define BLYNK_AUTH_TOKEN "xxxxxxxxxxxxxxxxxxxxxxxx"
 #define BLYNK_PRINT Serial
 
 #include <Firebase_ESP_Client.h>
@@ -28,22 +28,22 @@
 #define SCREEN_ROWS 2
 #define SMTP_server "smtp.gmail.com"
 #define SMTP_Port 465
-#define sender_email "esp082950@gmail.com"
-#define sender_password "wmuf gnrl yhzx gtga"
-#define Recipient_email "adnanadoo309@gmail.com"
-#define Recipient_name "Adnan khawaja syed"
+#define sender_email "xxxxxxxxxxxxxxx@gmail.com"
+#define sender_password "xxxxxxxxxx"
+#define Recipient_email "xxxxxxxxxxxxx@gmail.com"
+#define Recipient_name "xxxxxxxxxxxxxx"
 SMTPSession smtp;
 Session_Config config;
 
 LiquidCrystal_I2C lcd(0x27, 16, 2); 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyDM_5vrVMUGRCRfEVBSQBwB2qpzBecvvo0"
+#define API_KEY "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 // Insert RTDB URLefine the RTDB URL */
 #define DATABASE_URL "https://esp32-b19da-default-rtdb.firebaseio.com/"
-char ssid[] = "Galaxy A9 (2018)99F6";
+char ssid[] = "xxxxxxxxxxx";
 char pass[] = "12345876";
-char apiKey[] = "660ecee04484d641560174ryue1d057";
+char apiKey[] = "xxxxxxxxxxxxxxxxxxxxxxxx";
 const char* ntpServer = "pool.ntp.org";
 /* Callback function to get the Email sending status */
 FirebaseData fbdo;
@@ -292,7 +292,7 @@ void setup() {
   connectWiFi();
   configTime(19800, 0, ntpServer);
   firebaseInit();
-  Blynk.begin("4aj77kLVaBsc-eZHvsM5ksk96JfvgOmT",ssid,pass);
+  Blynk.begin("xxxxxxxxxxxxxxxxx",ssid,pass);
   pinMode(IR_PIN, INPUT);
   pinMode(MQ2_PIN,INPUT);
   pinMode(BUZZ_PIN , OUTPUT);
